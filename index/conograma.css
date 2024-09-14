@@ -21,7 +21,15 @@ nav ul {
     justify-content: center;
     gap: 2em;
 }
-
+nav select {
+    display: block; /* Exibe o menu de seleção (dropdown) */
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #8c0705;
+    color: #f0f0f0; }
 nav ul li {
     display: inline;
 }
@@ -77,3 +85,4 @@ footer {
     text-align: center;
     padding: 1em 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');

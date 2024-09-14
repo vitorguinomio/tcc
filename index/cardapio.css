@@ -24,6 +24,16 @@ nav ul {
     gap: 2em;
 }
 
+nav select {
+    display: block; /* Exibe o menu de seleção (dropdown) */
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #8c0705;
+    color: #f0f0f0; }
+
 nav ul li {
     display: inline;
 }
@@ -68,18 +78,18 @@ main {
 }
 
 .dish h1 {
-    color: green; /* Laranja Vibrante com 80% de opacidade */
+    color: green; 
 }
 
 .dish h2 {
-    color: red; /* Azul Turquesa com 80% de opacidade */
+    color: red; 
 }
 
 .ingredients {
     list-style-type: none;
     padding: 0;
     text-align: left;
-    font-size: large;
+    font: normal 500 medium "lora", system-ui;
 }
 
 .ingredients li {
@@ -103,3 +113,4 @@ footer {
     bottom: 0;
     width: 100%;
 }
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
