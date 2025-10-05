@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url(PRATOS/fundo\ 2.png) no-repeat center center fixed; /* Adiciona a imagem de fundo */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+    color: rgba(0, 0, 0, 0.8); /* Preto com 80% de opacidade */
+}
+
+header {
+    background-color: #8c0705; /* Laranja Vibrante com 80% de opacidade */
+    color: #f0f0f0e6; /* Cinza Claro com 90% de opacidade */
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+nav select {
+    display: block; /* Exibe o menu de seleção (dropdown) */
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #8c0705;
+    color: #f0f0f0; }
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: rgba(240, 240, 240, 0.9); /* Cinza Claro com 90% de opacidade */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo {
+    max-width: 100px; /* Define a largura máxima */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+}
+
+.dish {
+    background-color: #ffe09f ; /* Verde Limão com 80% de opacidade */
+    margin: 2em;
+    padding: 1em;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 5px;
+    border-style: double;
+    border-color: red;
+}
+
+.dish img {
+    width: 100%;
+    max-width: 600px; /* Define a largura máxima */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px;
+}
+
+.dish h1 {
+    color: green; 
+}
+
+.dish h2 {
+    color: red; 
+}
+
+.ingredients {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    font: normal 500 medium "lora", system-ui;
+}
+
+.ingredients li {
+    margin-bottom: 0.5em;
+    font-size: x-large;
+}
+
+section#contact {
+    background-color: green; /* Azul Turquesa com 80% de opacidade */
+    color: rgba(240, 240, 240, 0.9); /* Cinza Claro com 90% de opacidade */
+    padding: 2em;
+    text-align: center;
+}
+
+footer {
+    background-color: rgba(255, 87, 51, 0.8); /* Laranja Vibrante com 80% de opacidade */
+    color: rgba(240, 240, 240, 0.9); /* Cinza Claro com 90% de opacidade */
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
