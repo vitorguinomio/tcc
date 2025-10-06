@@ -1,13 +1,39 @@
+{% load static %}
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% block title %}
+    
+    <title>{% block title %}LaCasita{% endblock %}</title>
+    
+    {% block head %}
     {% endblock %}
 </head>
 <body>
+
+    <header>
+        <h1>LaCasita</h1>
+        <nav>
+            <img src="{% static 'reserva/css/PRATOS/hola.png' %}" alt="Logo LaCasita" class="logo">
+            <select onchange="location = this.value;">
+                <option value="">Menu</option>
+                <option value="{% url 'home' %}">Início</option>
+                <option value="{% url 'cardapio' %}">Cardápio</option>
+                <option value="#contato">Contato</option>
+                <option value="{% url 'cronograma' %}">Cronograma</option>
+                <option value="{% url 'reserva' %}">Reserva</option>
+            </select>
+        </nav>
+    </header>
+    
     {% block content %}
     {% endblock %}
+
+    <footer>
+        <p>&copy; 2024 LaCasita. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>
