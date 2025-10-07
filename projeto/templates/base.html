@@ -5,9 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>{% block title %}LaCasita{% endblock %}</title>
-    
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
     {% block head %}
     {% endblock %}
 </head>
@@ -19,11 +19,10 @@
             <img src="{% static 'reserva/css/PRATOS/hola.png' %}" alt="Logo LaCasita" class="logo">
             <select onchange="location = this.value;">
                 <option value="">Menu</option>
-                <option value="{% url 'home' %}">Início</option>
-                <option value="{% url 'cardapio' %}">Cardápio</option>
+                <option value="{% url 'reserva:home' %}">Início</option>
+                <option value="{% url 'cardapio:cardapio' %}">Cardápio</option>
                 <option value="#contato">Contato</option>
-                <option value="{% url 'cronograma' %}">Cronograma</option>
-                <option value="{% url 'reserva' %}">Reserva</option>
+                <option value="{% url 'cronograma:cronograma' %}">Cronograma</option>
             </select>
         </nav>
     </header>

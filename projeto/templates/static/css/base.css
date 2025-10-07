@@ -1,0 +1,61 @@
+/* Importa fontes externas - deve estar no topo */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* Define uma fonte personalizada para o site */
+@font-face {
+    font-family: 'apple';
+    /* O caminho é relativo à localização deste arquivo CSS */
+    src: url('../fonts/AppleGaramond-Italic.ttf') format('truetype'); 
+    font-weight: normal; /* Use 'normal', 'bold', etc. */
+    font-style: italic;
+}
+
+/* Estilos gerais do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* O caminho é relativo à localização deste arquivo CSS */
+    background: url('../images/Design_sem_nome.png') no-repeat center center fixed;
+    background-size: cover;
+    /* Adiciona padding no rodapé para evitar que o conteúdo fique atrás do footer fixo */
+    padding-bottom: 5em; 
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #8c0705; /* Vermelho escuro */
+    color: #F0F0F0; /* Cinza Claro */
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Estilos do menu de navegação dropdown */
+nav select {
+    display: block;
+    padding: 0.5em;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #8c0705;
+    color: #f0f0f0;
+    margin: 0.5em auto; /* Centraliza o menu */
+    max-width: 200px; /* Define uma largura máxima */
+}
+
+/* Estilos do rodapé fixo */
+footer {
+    background-color: rgba(255, 87, 51, 0.8); /* Laranja com transparência */
+    color: #F0F0F0; /* Cinza Claro */
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

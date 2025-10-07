@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'reserva',
     'cardapio',
-    'conograma',
+    'cronograma',
 ]
 
 MIDDLEWARE = [

@@ -1,5 +1,7 @@
+# seu_app/views.py
+
 from django.shortcuts import render
-from django.http import HttpResponse
 
 def home(request):
-    return render (request, 'reserva/home.html', name = "home")
+    # O terceiro argumento (contexto) é opcional.
+    return render(request, 'reserva/home.html')
