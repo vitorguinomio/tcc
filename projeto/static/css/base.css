@@ -19,8 +19,6 @@ body {
     /* O caminho é relativo à localização deste arquivo CSS */
     background: url('../images/Design_sem_nome.png') no-repeat center center fixed;
     background-size: cover;
-    /* Adiciona padding no rodapé para evitar que o conteúdo fique atrás do footer fixo */
-    padding-bottom: 5em; 
 }
 
 /* Estilos do cabeçalho */
@@ -46,7 +44,7 @@ nav select {
     background-color: #8c0705;
     color: #f0f0f0;
     margin: 0.5em auto; /* Centraliza o menu */
-    max-width: 200px; /* Define uma largura máxima */
+    width: 100%;
 }
 
 /* Estilos do rodapé fixo */
@@ -55,7 +53,17 @@ footer {
     color: #F0F0F0; /* Cinza Claro */
     text-align: center;
     padding: 1em 0;
-    position: fixed;
     bottom: 0;
+    width: 100%;
+}
+
+.contact{
+    justify-content: center;
+    background-color: green;
+    text-align: center;
+    height: 115px;
+}
+
+.menu{
     width: 100%;
 }

@@ -16,12 +16,12 @@
     <header>
         <h1>LaCasita</h1>
         <nav>
-            <img src="{% static 'reserva/css/PRATOS/hola.png' %}" alt="Logo LaCasita" class="logo">
-            <select onchange="location = this.value;">
+            <img src="{% static 'img/hola.png' %}" alt="Logo LaCasita" class="logo">
+            <select onchange="location = this.value;" , class="Menu>
                 <option value="">Menu</option>
-                <option value="{% url 'reserva:home' %}">Início</option>
+                <option value="{% url 'reserva:reservar' %}">Menu</option>
                 <option value="{% url 'cardapio:cardapio' %}">Cardápio</option>
-                <option value="#contato">Contato</option>
+                <option value="{% url 'reserva:reservar' %}">reserva</option>
                 <option value="{% url 'cronograma:cronograma' %}">Cronograma</option>
             </select>
         </nav>
@@ -30,6 +30,7 @@
     {% block content %}
     {% endblock %}
 
+    
     <footer>
         <p>&copy; 2024 LaCasita. Todos os direitos reservados.</p>
     </footer>

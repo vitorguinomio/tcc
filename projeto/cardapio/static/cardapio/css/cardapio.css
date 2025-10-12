@@ -1,0 +1,61 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('../img/fundo2.png') no-repeat center center fixed; /* Adiciona a imagem de fundo */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+    color: rgba(0, 0, 0, 0.8); /* Preto com 80% de opacidade */
+}
+.dish {
+    background-color: #ffe09f;
+    margin: 2em;
+    padding: 1em;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 5px double red;
+}
+
+.dish img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.dish h1 {
+    color: green;
+}
+
+.dish h2 {
+    color: red;
+}
+
+.ingredients {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    font: normal 500 medium "lora", system-ui;
+}
+
+.ingredients li {
+    margin-bottom: 0.5em;
+    font-size: x-large;
+}
+
+section#contact {
+    background-color: green;
+    color: rgba(240, 240, 240, 0.9);
+    padding: 2em;
+    text-align: center;
+}

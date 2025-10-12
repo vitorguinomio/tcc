@@ -13,4 +13,4 @@ class Reserva(models.Model):
     data_criação = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"Reserva de {self.nome_completo} para o dia {self.data_reserva}"
+        return f"Reserva de {self.nome_completo} para o dia {self.data_reserva}, a reserva foi feita no dia {self.data_criação}"

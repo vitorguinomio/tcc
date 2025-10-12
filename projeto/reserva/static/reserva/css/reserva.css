@@ -1,0 +1,103 @@
+/* Importa a fonte Lora do Google Fonts para uso em todo o site */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    /* ATENÇÃO: O caminho desta imagem precisa ser ajustado para o Django (veja a nota abaixo) */
+    background: url('../img/Fundo\ Virtual\ para\ Zoom\ Floral\ Creme.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.reserva {
+    background-color: #fff;
+    padding: 2em;
+    margin: 2em auto;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reserva h2 {
+    color: #8c0705; /* Vermelho escuro */
+    text-align: center;
+}
+
+.reserva form {
+    display: flex;
+    flex-direction: column;
+}
+
+.reserva label {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.reserva input[type="text"],
+.reserva input[type="date"],
+.reserva input[type="time"],
+.reserva input[type="number"],
+.reserva select {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1em;
+}
+
+.reserva input[type="submit"] {
+    background-color: #8c0705;
+    color: #fff;
+    padding: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.reserva input[type="submit"]:hover {
+    background-color: #6b0504;
+}
+
+section#contact {
+    background-color: #8c0705;
+    color: #f0f0f0;
+    padding: 2em;
+    text-align: center;
+}
+
+
+
+/* Adaptação para telas menores */
+@media (max-width: 500px) {
+    .reserva {
+        padding: 1em;
+        margin: 1em auto;
+        max-width: 100%;
+    }
+
+    .reserva h2 {
+        font-size: 1.5em;
+    }
+
+    .reserva input[type="text"],
+    .reserva input[type="date"],
+    .reserva input[type="time"],
+    .reserva input[type="number"],
+    .reserva select {
+        padding: 0.5em;
+        font-size: 1em;
+    }
+
+    .reserva input[type="submit"] {
+        padding: 0.75em;
+        font-size: 1em;
+    }
+
+    section#contact {
+        padding: 1em;
+    }
+}

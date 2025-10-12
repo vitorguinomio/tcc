@@ -8,5 +8,5 @@ app_name = 'reserva'
 
 urlpatterns = [
     # A rota '' (vazia) chama a view 'home' e recebe o nome 'home'
-    path('', views.home, name='home'),
+    path('', views.reservar, name='reservar'),
 ]

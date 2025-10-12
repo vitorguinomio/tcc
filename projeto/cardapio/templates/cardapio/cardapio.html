@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Cardápio - LaCasita
+{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'cardapio/css/cardapio.css' %}">
+{% endblock %}
+
+{% block content %}
+<main>
+    <div class="dish">
+        <img src="{% static 'cardapio/img/taco2.jpg' %}" alt="Taco de Carne">
+        <h1>Taco</h1>
+        <h2>Ingredientes</h2>
+        <ol type="i" class="ingredients">
+            <li>Tortilha</li>
+            <li>Carne moída ou frango</li>
+            <li>Guacamole</li>
+            <li>Queijo</li>
+            <li>Molho de pimenta (opcional)</li>
+        </ol>
+    </div>
+    
+    <div class="dish">
+        <img src="{% static 'cardapio/img/chili-com-carne..jpg' %}" alt="Chili com Carne">
+        <h1>Chili com Carne</h1>
+        <h2>Ingredientes</h2>
+        <ol type="i" class="ingredients">
+            <li>Carne moída</li>
+            <li>Feijão</li>
+            <li>Tomate</li>
+            <li>Pimenta</li>
+            <li>Especiarias</li>
+        </ol>
+    </div>
+    
+    <div class="dish">
+        <img src="{% static 'cardapio/img/churros..jpg' %}" alt="Churros">
+        <h1>Churros</h1>
+        <h2>Ingredientes</h2>
+        <ol type="i" class="ingredients">
+            <li>Farinha de trigo</li>
+            <li>Água</li>
+            <li>Manteiga</li>
+            <li>Açúcar</li>
+            <li>Canela</li>
+        </ol>
+    </div>
+    
+    <div class="dish">
+        <img src="{% static 'cardapio/img/Enchiladas.jpg' %}" alt="Enchiladas">
+        <h1>Enchiladas</h1>
+        <h2>Ingredientes</h2>
+        <ol type="i" class="ingredients">
+            <li>Tortilhas de milho</li>
+            <li>Frango desfiado</li>
+            <li>Molho de tomate</li>
+            <li>Queijo</li>
+            <li>Creme de leite</li>
+        </ol>
+    </div>
+    
+    <div class="dish">
+        <img src="{% static 'cardapio/img/Guacamole.jpg' %}" alt="Guacamole">
+        <h1>Guacamole</h1>
+        <h2>Ingredientes</h2>
+        <ol type="i" class="ingredients">
+            <li>Abacate</li>
+            <li>Cebola</li>
+            <li>Tomate</li>
+            <li>Limão</li>
+            <li>Coentro</li>
+        </ol>
+    </div>
+    
+    <div class="dish">
+        <img src="{% static 'cardapio/img/mole-poblano..jpg' %}" alt="Mole Poblano">
+        <h1>Mole Poblano</h1>
+        <h2>Ingredientes</h2>
+        <ol type="i" class="ingredients">
+            <li>Peito de frango</li>
+            <li>Chocolate amargo</li>
+            <li>Pimenta</li>
+            <li>Especiarias</li>
+            <li>Amendoim</li>
+        </ol>
+    </div>
+</main>
+
+{% endblock %}

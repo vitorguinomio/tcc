@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Reserva - LaCasita{% endblock %}
+
+{% block head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'reserva/css/reserva.css' %}">
+{% endblock %}
+
+{% block content %}
+<main>
+    <section class="reserva">
+        <h2>Faça sua Reserva</h2>
+        
+    <form method="post">
+    {% csrf_token %}
+
+
+        <label for="{{ form.nome_completo.id_for_label }}">Nome Completo</label>
+        <input 
+            type="text" 
+            name="nome_completo" 
+            id="{{ form.nome_completo.id_for_label }}" 
+            value="{{ form.nome_completo.value|default:'' }}">
+
+        {% for error in form.nome_completo.errors %}
+            <div class="error">{{ error }}</div>
+        {% endfor %}
+
+
+
+
+    <input type="submit" value="Reservar">
+    
+    </form>
+    </section>
+</main>
+
+<section id="contact">
+    <h2>Contato</h2>
+    <p>Email: Lacasita@restaurante.com</p>
+    <p>Telefone: (11) 1234-5678</p>
+</section>
+{% endblock %}

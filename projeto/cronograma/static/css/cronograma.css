@@ -1,0 +1,35 @@
+/* Estiliza o container principal da página de cronograma */
+.cronograma {
+    padding: 2em;
+    max-width: 800px;
+    margin: 2em auto; /* Adiciona margem no topo e embaixo */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal da seção */
+.cronograma h2 {
+    color: #8c0705;
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* Container para cada evento individual */
+.evento {
+    margin-bottom: 2em;
+}
+
+/* Título de cada evento */
+.evento h3 {
+    color: #FF5733;
+    font-size: x-large;
+    margin-bottom: 0.5em;
+}
+
+/* Parágrafos dentro de cada evento */
+.evento p {
+    font-size: medium;
+    margin: 0.5em 0;
+}
